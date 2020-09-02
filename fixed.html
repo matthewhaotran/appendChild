@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Append Child</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Append Child</h1>
-    <a href="fixed.html">to fixed page</a>
+    <h1>Append Child with fixed button</h1>
+    <pre>
+    #showmore {
+        overflow-anchor: none;
+    }
+    </pre>
+    <p>code added to the button</p>
+    <a href="index.html">Back to page with broken feature</a>
     <ol id="list">
         <li>test</li>
         <li>test</li>
@@ -61,7 +69,8 @@
         <li>test</li>
         <li>test</li>
     </ol>
-    <button onclick="showMore()">Add 10 more</button>
+    <button id="showmore" onclick="showMore()">Add 10 more</button>
     <script src="index.js"></script>
 </body>
+
 </html>
